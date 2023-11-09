@@ -11,7 +11,7 @@ import Layout from '@/layout'
  *  meta:{
  *    title => 菜单名称
  *    icon => 菜单icon
- *    roles => 权限标识数组
+ *    roles => 权限标识数组,没有roles，就没有限制，都可以访问
  *  }
  *
  */
@@ -79,7 +79,7 @@ export const asyncRoutes = [
     path: '/user',
     component: Layout,
     redirect: '/user/table',
-    meta: { role: 'admin', title: '管理员权限路由', icon: 'user' },
+    meta: { roles: ['admin'], title: '管理员权限路由', icon: 'user' },
     children: [
       {
         path: '/user/table',

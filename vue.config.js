@@ -6,7 +6,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  publicPath: '/vue2-manage',
+  // publicPath: '/vue2-manage',
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development', // 生产构建时禁用 eslint-loader
