@@ -2,7 +2,6 @@ import Cookies from 'js-cookie'
 
 const state = {
   opened: Cookies.get('sidebarStatus') ? !!+Cookies.get('sidebarStatus') : true
-
 }
 
 const mutations = {
